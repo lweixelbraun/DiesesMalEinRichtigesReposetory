@@ -1,5 +1,5 @@
 Wie kann in IntelliJ ein commit geschrieben werden?
-- Alt+0 und eine Nachricht schreiben.
+- Alt+0 
 
 Was ist der Unterschied zwischen merge und rebase? Wie funktioniert merge? Wie rebase?
 - Merge(git merge branchname) ist eine zusammenführung von zwei Branches und
