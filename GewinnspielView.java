@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GewinnspielView  extends JFrame{
-    JLabel punkte, ergebnis, gesamtPunkteZahl, punkteErgebnis, computer;
+    JLabel punkte, ergebnis, gesamtPunkte, rundenErgebnis, computerZahl;
     JTextField spielerZahl;
-    JButton nochmal;
+    JButton nochmaleinmal;
     public GewinnspielView() {
         super("Gewinnspiel");
         setSize(400, 300);
@@ -16,14 +16,14 @@ public class GewinnspielView  extends JFrame{
 
         punkte = new JLabel("Punkte gesamt:");
         ergebnis = new JLabel("Aktuelles Ergebnis: ");
-        gesamtPunkteZahl = new JLabel();
-        punkteErgebnis = new JLabel("0");
-        gesamtPunkteZahl.setOpaque(true);
-        punkteErgebnis.setOpaque(true);
+        gesamtPunkte = new JLabel();
+        rundenErgebnis = new JLabel("0");
+        gesamtPunkte.setOpaque(true);
+        rundenErgebnis.setOpaque(true);
         topPanel.add(punkte);
         topPanel.add(ergebnis);
-        topPanel.add(gesamtPunkteZahl);
-        topPanel.add(punkteErgebnis);
+        topPanel.add(gesamtPunkte);
+        topPanel.add(rundenErgebnis);
 
         add(topPanel);
 
@@ -33,19 +33,19 @@ public class GewinnspielView  extends JFrame{
         middlePanel.add(new JLabel("Zahl für nächste Runde: "));
         middlePanel.add(new JLabel(" Computerzahl:"));
         spielerZahl = new JTextField(1);
-        computer = new JLabel("");
+        computerZahl = new JLabel("");
         middlePanel.add(spielerZahl);
-        middlePanel.add(computer);
+        middlePanel.add(computerZahl);
         add(middlePanel);
 
         JPanel bottomPanel = new JPanel();
         bottomPanel.setLayout(new FlowLayout());
-        nochmal = new JButton("Noch einmal!");
-        bottomPanel.add(nochmal);
+        nochmaleinmal = new JButton("Noch einmal!");
+        bottomPanel.add(nochmaleinmal);
         add(bottomPanel);
     }
     public void setComputerZahl(String zahl){
-        computer.setText(zahl);
+        computerZahl.setText(zahl);
     }
 }
 

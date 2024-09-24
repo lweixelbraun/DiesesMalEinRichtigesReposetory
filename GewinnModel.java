@@ -1,4 +1,3 @@
-import javax.swing.*;
 public class GewinnModel {
     private int gesamtPunkte;
     private int spielerZahl;
@@ -9,7 +8,6 @@ public class GewinnModel {
         this.spielerZahl = 30;
         this.computerZahl = 30;
     }
-
     public int getGesamtPunkte() {
         return gesamtPunkte;
     }
